@@ -44,17 +44,18 @@ order-system/
 │   ├── src/
 │   │   ├── pages/
 │   │   │   └── order/
-│   │   │       ├── OrderPage.js
-│   │   │       ├── OrderList.js
-│   │   │       └── OrderMain.js
+│   │   │       ├── OrderPage.tsx
+│   │   │       ├── OrderList.tsx
+│   │   │       └── OrderMain.tsx
 │   │   │
 │   │   ├── api/
-│   │   │   └── orderApi.js
+│   │   │   └── orderApi.ts
 │   │   │
 │   │   ├── App.js
 │   │   └── index.js
 │   │
 │   ├── package.json
+    └── tsconfig.json
 │
 ├── package.json
 └── README.md
