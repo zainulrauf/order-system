@@ -1,7 +1,5 @@
 const BASE_URL = "http://localhost:3001/orders";
 
-/* ================= TYPES ================= */
-
 export type ApiData = {
   students: any[];
   parents: any[];
@@ -23,16 +21,10 @@ export type CreateOrderResponse = {
   code?: string;
   message?: string;
 };
-
-/* ================= API ================= */
-
-// 📡 Get all data (parents + students + menu + orders)
 export const fetchAllData = async (): Promise<ApiData> => {
   const res = await fetch(`${BASE_URL}/getAllData`);
   return res.json();
 };
-
-// 📡 Create order
 export const createOrder = async (
   payload: CreateOrderPayload
 ): Promise<CreateOrderResponse> => {
@@ -46,8 +38,6 @@ export const createOrder = async (
 
   return res.json();
 };
-
-// 📡 Shared loader helper
 export const loadAllData = async (
   setData: (data: ApiData) => void,
   setLoading: (loading: boolean) => void
